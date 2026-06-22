@@ -1,0 +1,37 @@
+<routes>
+  <vType id="sedan" accel="2.5" decel="4.5" sigma="0.3" length="4.5"  maxSpeed="13.9" color="0.2,0.4,1.0" guiShape="passenger"     jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.0"/>
+  <vType id="suv"   accel="2.0" decel="4.0" sigma="0.3" length="5.0"  maxSpeed="12.0" color="0.8,0.3,0.1" guiShape="passenger/van" jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.1"/>
+  <vType id="truck" accel="1.0" decel="3.5" sigma="0.2" length="10.0" maxSpeed="10.0" color="0.5,0.5,0.5" guiShape="truck"         jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.0"/>
+  <vType id="bus"   accel="1.2" decel="3.8" sigma="0.2" length="12.0" maxSpeed="9.0"  color="1.0,0.8,0.0" guiShape="bus"           jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.0"/>
+  <vType id="bike"  accel="1.5" decel="5.0" sigma="0.4" length="1.8"  maxSpeed="8.0"  color="0.0,0.8,0.2" guiShape="bicycle"       jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.0"/>
+  <vType id="ego"   accel="3.0" decel="5.0" sigma="0.0" length="4.5"  maxSpeed="13.9" color="1.0,0.0,0.5" guiShape="passenger"     jmDriveAfterRedTime="0" jmDriveAfterYellowTime="0" jmIgnoreKeepClearTime="0" impatience="0.0"/>
+
+  <!-- OUTER RING only - verified working -->
+  <route id="rt_ocw"  edges="or_n or_e or_s or_w or_n or_e or_s or_w"/>
+  <route id="rt_occw" edges="or_w2 or_s2 or_e2 or_n2 or_w2 or_s2 or_e2 or_n2"/>
+
+  <!-- INNER roundabout only - verified working -->
+  <route id="rt_inner" edges="n_in ring_12 ring_23 ring_34 ring_41 ring_12 ring_23 ring_34 ring_41 n_out"/>
+
+  <!-- SIMPLE arm routes - only valid connections -->
+  <route id="rt_n_s" edges="n_in ring_12 ring_23 s_out s_to_se or_e2 or_n2 nw_to_n n_in ring_12 ring_23 s_out"/>
+  <route id="rt_e_w" edges="e_in ring_23 ring_34 w_out w_to_nw or_n ne_to_n n_in ring_41 w_out"/>
+  <route id="rt_outer_arm" edges="or_n ne_to_n n_in ring_12 e_out e_to_ne or_n"/>
+
+  <!-- FLOWS sorted by begin -->
+  <flow id="f_ocw1"  type="sedan" route="rt_ocw"       begin="0"  end="3600" period="5"  departLane="0"/>
+  <flow id="f_occw1" type="sedan" route="rt_occw"      begin="1"  end="3600" period="5"  departLane="0"/>
+  <flow id="f_inner" type="sedan" route="rt_inner"     begin="2"  end="3600" period="6"  departLane="best"/>
+  <flow id="f_ns"    type="suv"   route="rt_n_s"       begin="3"  end="3600" period="7"  departLane="best"/>
+  <flow id="f_ew"    type="suv"   route="rt_e_w"       begin="4"  end="3600" period="7"  departLane="best"/>
+  <flow id="f_arm"   type="sedan" route="rt_outer_arm" begin="5"  end="3600" period="8"  departLane="best"/>
+  <flow id="f_ocw2"  type="suv"   route="rt_ocw"       begin="6"  end="3600" period="8"  departLane="1"/>
+  <flow id="f_occw2" type="bus"   route="rt_occw"      begin="7"  end="3600" period="20" departLane="0"/>
+  <flow id="f_ocw3"  type="truck" route="rt_ocw"       begin="8"  end="3600" period="15" departLane="0"/>
+  <flow id="f_bk"    type="bike"  route="rt_ocw"       begin="9"  end="3600" period="10" departLane="0"/>
+
+  <!-- EGO -->
+  <vehicle id="ego_0" type="ego" depart="12" departLane="0" departSpeed="5">
+    <route edges="or_n ne_to_n n_in ring_12 ring_23 ring_34 ring_41 n_out n_to_nw or_n2 nw_to_n n_in ring_12 e_out e_to_ne or_e or_s or_w"/>
+  </vehicle>
+</routes>

@@ -1,0 +1,17 @@
+<viewsettings>
+  <scheme name="real world">
+    <background backgroundColor="50,50,50" showGrid="0"/>
+    <edges laneShowBorders="1" showLinkDecals="1" showRails="0"
+           edgeValue="0" edgeScaleValue="0">
+      <colorScheme name="uniform">
+        <entry color="70,70,70"/>
+      </colorScheme>
+    </edges>
+    <vehicles vehicleQuality="2" showBlinker="1" drawMinGap="0"
+              vehicleSize.minSize="5" vehicleSize.exaggeration="1.2">
+      <colorScheme name="given/assigned vehicle color"/>
+    </vehicles>
+    <junctions drawShape="1" junctionSize.exaggeration="1"/>
+    <polygons polySize.minSize="0" polySize.exaggeration="1"/>
+  </scheme>
+</viewsettings>

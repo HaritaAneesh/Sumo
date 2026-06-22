@@ -1,0 +1,166 @@
+<additional>
+
+  <!-- ROUNDABOUT ISLAND center=400,400 -->
+  <poly id="island_grass" type="park" color="34,139,34" fill="1" layer="0"
+        shape="400,480 456,448 456,352 400,320 344,352 344,448"/>
+  <poly id="island_inner" type="park" color="80,200,80" fill="1" layer="1"
+        shape="400,460 440,438 440,362 400,340 360,362 360,438"/>
+  <poi id="tr1" type="tree" color="0,100,0" x="400" y="470" layer="2" width="12" height="12"/>
+  <poi id="tr2" type="tree" color="0,100,0" x="450" y="445" layer="2" width="12" height="12"/>
+  <poi id="tr3" type="tree" color="0,100,0" x="450" y="355" layer="2" width="12" height="12"/>
+  <poi id="tr4" type="tree" color="0,100,0" x="400" y="330" layer="2" width="12" height="12"/>
+  <poi id="tr5" type="tree" color="0,100,0" x="350" y="355" layer="2" width="12" height="12"/>
+  <poi id="tr6" type="tree" color="0,100,0" x="350" y="445" layer="2" width="12" height="12"/>
+
+  <!-- PAVEMENTS: north arm (x=400, y=500..800) -->
+  <poly id="pave_n_e" type="pavement" color="210,200,185" fill="1" layer="-1" shape="415,500 435,500 435,795 415,795"/>
+  <poly id="pave_n_w" type="pavement" color="210,200,185" fill="1" layer="-1" shape="365,500 385,500 385,795 365,795"/>
+  <!-- south arm (x=400, y=0..300) -->
+  <poly id="pave_s_e" type="pavement" color="210,200,185" fill="1" layer="-1" shape="415,5   435,5   435,300 415,300"/>
+  <poly id="pave_s_w" type="pavement" color="210,200,185" fill="1" layer="-1" shape="365,5   385,5   385,300 365,300"/>
+  <!-- east arm (y=400, x=500..800) -->
+  <poly id="pave_e_n" type="pavement" color="210,200,185" fill="1" layer="-1" shape="500,415 795,415 795,435 500,435"/>
+  <poly id="pave_e_s" type="pavement" color="210,200,185" fill="1" layer="-1" shape="500,365 795,365 795,385 500,385"/>
+  <!-- west arm (y=400, x=0..300) -->
+  <poly id="pave_w_n" type="pavement" color="210,200,185" fill="1" layer="-1" shape="5,415   300,415 300,435 5,435"/>
+  <poly id="pave_w_s" type="pavement" color="210,200,185" fill="1" layer="-1" shape="5,365   300,365 300,385 5,385"/>
+
+  <!-- PAVEMENTS: outer ring roads -->
+  <!-- north outer (y=800, x=0..800) -->
+  <poly id="pave_on_s" type="pavement" color="210,200,185" fill="1" layer="-1" shape="5,760   795,760 795,775 5,775"/>
+  <!-- south outer (y=0, x=0..800) -->
+  <poly id="pave_os_n" type="pavement" color="210,200,185" fill="1" layer="-1" shape="5,25    795,25  795,40  5,40"/>
+  <!-- east outer (x=800, y=0..800) -->
+  <poly id="pave_oe_w" type="pavement" color="210,200,185" fill="1" layer="-1" shape="760,5   775,5   775,795 760,795"/>
+  <!-- west outer (x=0, y=0..800) -->
+  <poly id="pave_ow_e" type="pavement" color="210,200,185" fill="1" layer="-1" shape="25,5    40,5    40,795  25,795"/>
+
+  <!-- TREES: north arm -->
+  <poi id="tn_e1" type="tree" color="0,130,0" x="425" y="530" layer="2" width="11" height="11"/>
+  <poi id="tn_e2" type="tree" color="0,130,0" x="425" y="575" layer="2" width="11" height="11"/>
+  <poi id="tn_e3" type="tree" color="0,130,0" x="425" y="620" layer="2" width="11" height="11"/>
+  <poi id="tn_e4" type="tree" color="0,130,0" x="425" y="665" layer="2" width="11" height="11"/>
+  <poi id="tn_e5" type="tree" color="0,130,0" x="425" y="710" layer="2" width="11" height="11"/>
+  <poi id="tn_e6" type="tree" color="0,130,0" x="425" y="755" layer="2" width="11" height="11"/>
+  <poi id="tn_w1" type="tree" color="0,130,0" x="375" y="530" layer="2" width="11" height="11"/>
+  <poi id="tn_w2" type="tree" color="0,130,0" x="375" y="575" layer="2" width="11" height="11"/>
+  <poi id="tn_w3" type="tree" color="0,130,0" x="375" y="620" layer="2" width="11" height="11"/>
+  <poi id="tn_w4" type="tree" color="0,130,0" x="375" y="665" layer="2" width="11" height="11"/>
+  <poi id="tn_w5" type="tree" color="0,130,0" x="375" y="710" layer="2" width="11" height="11"/>
+  <poi id="tn_w6" type="tree" color="0,130,0" x="375" y="755" layer="2" width="11" height="11"/>
+
+  <!-- TREES: south arm -->
+  <poi id="ts_e1" type="tree" color="0,130,0" x="425" y="270" layer="2" width="11" height="11"/>
+  <poi id="ts_e2" type="tree" color="0,130,0" x="425" y="225" layer="2" width="11" height="11"/>
+  <poi id="ts_e3" type="tree" color="0,130,0" x="425" y="180" layer="2" width="11" height="11"/>
+  <poi id="ts_e4" type="tree" color="0,130,0" x="425" y="135" layer="2" width="11" height="11"/>
+  <poi id="ts_e5" type="tree" color="0,130,0" x="425" y="90"  layer="2" width="11" height="11"/>
+  <poi id="ts_e6" type="tree" color="0,130,0" x="425" y="45"  layer="2" width="11" height="11"/>
+  <poi id="ts_w1" type="tree" color="0,130,0" x="375" y="270" layer="2" width="11" height="11"/>
+  <poi id="ts_w2" type="tree" color="0,130,0" x="375" y="225" layer="2" width="11" height="11"/>
+  <poi id="ts_w3" type="tree" color="0,130,0" x="375" y="180" layer="2" width="11" height="11"/>
+  <poi id="ts_w4" type="tree" color="0,130,0" x="375" y="135" layer="2" width="11" height="11"/>
+  <poi id="ts_w5" type="tree" color="0,130,0" x="375" y="90"  layer="2" width="11" height="11"/>
+  <poi id="ts_w6" type="tree" color="0,130,0" x="375" y="45"  layer="2" width="11" height="11"/>
+
+  <!-- TREES: east arm -->
+  <poi id="te_n1" type="tree" color="0,130,0" x="530" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_n2" type="tree" color="0,130,0" x="575" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_n3" type="tree" color="0,130,0" x="620" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_n4" type="tree" color="0,130,0" x="665" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_n5" type="tree" color="0,130,0" x="710" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_n6" type="tree" color="0,130,0" x="755" y="425" layer="2" width="11" height="11"/>
+  <poi id="te_s1" type="tree" color="0,130,0" x="530" y="375" layer="2" width="11" height="11"/>
+  <poi id="te_s2" type="tree" color="0,130,0" x="575" y="375" layer="2" width="11" height="11"/>
+  <poi id="te_s3" type="tree" color="0,130,0" x="620" y="375" layer="2" width="11" height="11"/>
+  <poi id="te_s4" type="tree" color="0,130,0" x="665" y="375" layer="2" width="11" height="11"/>
+  <poi id="te_s5" type="tree" color="0,130,0" x="710" y="375" layer="2" width="11" height="11"/>
+  <poi id="te_s6" type="tree" color="0,130,0" x="755" y="375" layer="2" width="11" height="11"/>
+
+  <!-- TREES: west arm -->
+  <poi id="tw_n1" type="tree" color="0,130,0" x="270" y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_n2" type="tree" color="0,130,0" x="225" y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_n3" type="tree" color="0,130,0" x="180" y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_n4" type="tree" color="0,130,0" x="135" y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_n5" type="tree" color="0,130,0" x="90"  y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_n6" type="tree" color="0,130,0" x="45"  y="425" layer="2" width="11" height="11"/>
+  <poi id="tw_s1" type="tree" color="0,130,0" x="270" y="375" layer="2" width="11" height="11"/>
+  <poi id="tw_s2" type="tree" color="0,130,0" x="225" y="375" layer="2" width="11" height="11"/>
+  <poi id="tw_s3" type="tree" color="0,130,0" x="180" y="375" layer="2" width="11" height="11"/>
+  <poi id="tw_s4" type="tree" color="0,130,0" x="135" y="375" layer="2" width="11" height="11"/>
+  <poi id="tw_s5" type="tree" color="0,130,0" x="90"  y="375" layer="2" width="11" height="11"/>
+  <poi id="tw_s6" type="tree" color="0,130,0" x="45"  y="375" layer="2" width="11" height="11"/>
+
+  <!-- TREES: outer ring roads -->
+  <poi id="ton1" type="tree" color="0,120,0" x="100" y="785" layer="2" width="11" height="11"/>
+  <poi id="ton2" type="tree" color="0,120,0" x="200" y="785" layer="2" width="11" height="11"/>
+  <poi id="ton3" type="tree" color="0,120,0" x="300" y="785" layer="2" width="11" height="11"/>
+  <poi id="ton4" type="tree" color="0,120,0" x="500" y="785" layer="2" width="11" height="11"/>
+  <poi id="ton5" type="tree" color="0,120,0" x="600" y="785" layer="2" width="11" height="11"/>
+  <poi id="ton6" type="tree" color="0,120,0" x="700" y="785" layer="2" width="11" height="11"/>
+  <poi id="tos1" type="tree" color="0,120,0" x="100" y="15"  layer="2" width="11" height="11"/>
+  <poi id="tos2" type="tree" color="0,120,0" x="200" y="15"  layer="2" width="11" height="11"/>
+  <poi id="tos3" type="tree" color="0,120,0" x="300" y="15"  layer="2" width="11" height="11"/>
+  <poi id="tos4" type="tree" color="0,120,0" x="500" y="15"  layer="2" width="11" height="11"/>
+  <poi id="tos5" type="tree" color="0,120,0" x="600" y="15"  layer="2" width="11" height="11"/>
+  <poi id="tos6" type="tree" color="0,120,0" x="700" y="15"  layer="2" width="11" height="11"/>
+  <poi id="toe1" type="tree" color="0,120,0" x="785" y="100" layer="2" width="11" height="11"/>
+  <poi id="toe2" type="tree" color="0,120,0" x="785" y="200" layer="2" width="11" height="11"/>
+  <poi id="toe3" type="tree" color="0,120,0" x="785" y="300" layer="2" width="11" height="11"/>
+  <poi id="toe4" type="tree" color="0,120,0" x="785" y="500" layer="2" width="11" height="11"/>
+  <poi id="toe5" type="tree" color="0,120,0" x="785" y="600" layer="2" width="11" height="11"/>
+  <poi id="toe6" type="tree" color="0,120,0" x="785" y="700" layer="2" width="11" height="11"/>
+  <poi id="tow1" type="tree" color="0,120,0" x="15"  y="100" layer="2" width="11" height="11"/>
+  <poi id="tow2" type="tree" color="0,120,0" x="15"  y="200" layer="2" width="11" height="11"/>
+  <poi id="tow3" type="tree" color="0,120,0" x="15"  y="300" layer="2" width="11" height="11"/>
+  <poi id="tow4" type="tree" color="0,120,0" x="15"  y="500" layer="2" width="11" height="11"/>
+  <poi id="tow5" type="tree" color="0,120,0" x="15"  y="600" layer="2" width="11" height="11"/>
+  <poi id="tow6" type="tree" color="0,120,0" x="15"  y="700" layer="2" width="11" height="11"/>
+
+  <!-- NW QUADRANT buildings (x:50-350, y:500-750) -->
+  <poly id="bld_nw1" type="building" color="100,130,180" fill="1" layer="1" shape="55,620  170,620 170,720 55,720"/>
+  <poly id="bld_nw2" type="building" color="80,110,160"  fill="1" layer="1" shape="185,620 310,620 310,710 185,710"/>
+  <poly id="bld_nw3" type="building" color="110,140,190" fill="1" layer="1" shape="55,730  175,730 175,750 55,750"/>
+  <poly id="bld_nw4" type="building" color="70,100,150"  fill="1" layer="1" shape="55,500  350,500 350,605 55,605"/>
+  <poly id="park_nw" type="park"     color="60,160,60"   fill="1" layer="-1" shape="55,500  350,500 350,750 55,750"/>
+
+  <!-- NE QUADRANT buildings (x:450-750, y:500-750) -->
+  <poly id="bld_ne1" type="building" color="180,140,100" fill="1" layer="1" shape="450,620 565,620 565,720 450,720"/>
+  <poly id="bld_ne2" type="building" color="160,120,80"  fill="1" layer="1" shape="580,620 710,620 710,710 580,710"/>
+  <poly id="bld_ne3" type="building" color="200,160,110" fill="1" layer="1" shape="450,730 570,730 570,750 450,750"/>
+  <poly id="bld_ne4" type="building" color="150,110,70"  fill="1" layer="1" shape="450,500 750,500 750,605 450,605"/>
+  <poly id="park_ne" type="park"     color="60,160,60"   fill="1" layer="-1" shape="450,500 750,500 750,750 450,750"/>
+
+  <!-- SW QUADRANT buildings (x:50-350, y:50-300) -->
+  <poly id="bld_sw1" type="building" color="170,70,120"  fill="1" layer="1" shape="55,80   170,80  170,180 55,180"/>
+  <poly id="bld_sw2" type="building" color="150,50,100"  fill="1" layer="1" shape="185,80  310,80  310,170 185,170"/>
+  <poly id="bld_sw3" type="building" color="180,80,130"  fill="1" layer="1" shape="55,50   350,50  350,65  55,65"/>
+  <poly id="bld_sw4" type="building" color="190,90,140"  fill="1" layer="1" shape="55,195  350,195 350,300 55,300"/>
+  <poly id="park_sw" type="park"     color="60,160,60"   fill="1" layer="-1" shape="55,50   350,50  350,300 55,300"/>
+
+  <!-- SE QUADRANT buildings (x:450-750, y:50-300) -->
+  <poly id="bld_se1" type="building" color="60,150,100"  fill="1" layer="1" shape="450,80  565,80  565,180 450,180"/>
+  <poly id="bld_se2" type="building" color="40,130,80"   fill="1" layer="1" shape="580,80  710,80  710,170 580,170"/>
+  <poly id="bld_se3" type="building" color="70,160,110"  fill="1" layer="1" shape="450,50  750,50  750,65  450,65"/>
+  <poly id="bld_se4" type="building" color="80,170,120"  fill="1" layer="1" shape="450,195 750,195 750,300 450,300"/>
+  <poly id="park_se" type="park"     color="60,160,60"   fill="1" layer="-1" shape="450,50  750,50  750,300 450,300"/>
+
+  <!-- quadrant trees -->
+  <poi id="nw_t1" type="tree" color="0,140,0" x="80"  y="540" layer="2" width="13" height="13"/>
+  <poi id="nw_t2" type="tree" color="0,140,0" x="150" y="540" layer="2" width="13" height="13"/>
+  <poi id="nw_t3" type="tree" color="0,140,0" x="220" y="540" layer="2" width="13" height="13"/>
+  <poi id="nw_t4" type="tree" color="0,140,0" x="290" y="540" layer="2" width="13" height="13"/>
+  <poi id="ne_t1" type="tree" color="0,140,0" x="480" y="540" layer="2" width="13" height="13"/>
+  <poi id="ne_t2" type="tree" color="0,140,0" x="550" y="540" layer="2" width="13" height="13"/>
+  <poi id="ne_t3" type="tree" color="0,140,0" x="620" y="540" layer="2" width="13" height="13"/>
+  <poi id="ne_t4" type="tree" color="0,140,0" x="690" y="540" layer="2" width="13" height="13"/>
+  <poi id="sw_t1" type="tree" color="0,140,0" x="80"  y="260" layer="2" width="13" height="13"/>
+  <poi id="sw_t2" type="tree" color="0,140,0" x="150" y="260" layer="2" width="13" height="13"/>
+  <poi id="sw_t3" type="tree" color="0,140,0" x="220" y="260" layer="2" width="13" height="13"/>
+  <poi id="sw_t4" type="tree" color="0,140,0" x="290" y="260" layer="2" width="13" height="13"/>
+  <poi id="se_t1" type="tree" color="0,140,0" x="480" y="260" layer="2" width="13" height="13"/>
+  <poi id="se_t2" type="tree" color="0,140,0" x="550" y="260" layer="2" width="13" height="13"/>
+  <poi id="se_t3" type="tree" color="0,140,0" x="620" y="260" layer="2" width="13" height="13"/>
+  <poi id="se_t4" type="tree" color="0,140,0" x="690" y="260" layer="2" width="13" height="13"/>
+
+</additional>
