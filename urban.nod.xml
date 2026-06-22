@@ -1,0 +1,19 @@
+<nodes>
+  
+  <node id="r1" x="0" y="100" type="traffic_light" />
+  <node id="r2" x="100" y="0" type="traffic_light" />
+  <node id="r3" x="0" y="-100" type="traffic_light" />
+  <node id="r4" x="-100" y="0" type="traffic_light" />
+
+  
+  <node id="n_north" x="0" y="400" type="traffic_light" />
+  <node id="n_east" x="400" y="0" type="traffic_light" />
+  <node id="n_south" x="0" y="-400" type="traffic_light" />
+  <node id="n_west" x="-400" y="0" type="traffic_light" />
+
+  
+  <node id="c_ne" x="400" y="400" type="traffic_light" />
+  <node id="c_se" x="400" y="-400" type="traffic_light" />
+  <node id="c_sw" x="-400" y="-400" type="traffic_light" />
+  <node id="c_nw" x="-400" y="400" type="traffic_light" />
+</nodes>

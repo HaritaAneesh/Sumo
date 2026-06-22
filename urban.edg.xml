@@ -1,0 +1,49 @@
+<edges>
+  <!-- roundabout ring (one-way clockwise) -->
+  <edge id="ring_12" from="r1" to="r2" numLanes="2" speed="8.3" priority="3"/>
+  <edge id="ring_23" from="r2" to="r3" numLanes="2" speed="8.3" priority="3"/>
+  <edge id="ring_34" from="r3" to="r4" numLanes="2" speed="8.3" priority="3"/>
+  <edge id="ring_41" from="r4" to="r1" numLanes="2" speed="8.3" priority="3"/>
+
+  <!-- arms: roundabout <-> TL junctions (bidirectional) -->
+  <edge id="n_in"  from="n_north" to="r1" numLanes="2" speed="13.9"/>
+  <edge id="n_out" from="r1" to="n_north" numLanes="2" speed="13.9"/>
+  <edge id="e_in"  from="n_east"  to="r2" numLanes="2" speed="13.9"/>
+  <edge id="e_out" from="r2" to="n_east"  numLanes="2" speed="13.9"/>
+  <edge id="s_in"  from="n_south" to="r3" numLanes="2" speed="13.9"/>
+  <edge id="s_out" from="r3" to="n_south" numLanes="2" speed="13.9"/>
+  <edge id="w_in"  from="n_west"  to="r4" numLanes="2" speed="13.9"/>
+  <edge id="w_out" from="r4" to="n_west"  numLanes="2" speed="13.9"/>
+
+  <!-- outer ring roads (clockwise) -->
+  <edge id="or_n"  from="c_nw" to="c_ne" numLanes="2" speed="13.9"/>
+  <edge id="or_e"  from="c_ne" to="c_se" numLanes="2" speed="13.9"/>
+  <edge id="or_s"  from="c_se" to="c_sw" numLanes="2" speed="13.9"/>
+  <edge id="or_w"  from="c_sw" to="c_nw" numLanes="2" speed="13.9"/>
+
+  <!-- outer ring roads (counter-clockwise) -->
+  <edge id="or_n2" from="c_ne" to="c_nw" numLanes="2" speed="13.9"/>
+  <edge id="or_e2" from="c_se" to="c_ne" numLanes="2" speed="13.9"/>
+  <edge id="or_s2" from="c_sw" to="c_se" numLanes="2" speed="13.9"/>
+  <edge id="or_w2" from="c_nw" to="c_sw" numLanes="2" speed="13.9"/>
+
+  <!-- connect TL junctions to corner nodes -->
+  <edge id="n_to_ne" from="n_north" to="c_ne" numLanes="2" speed="13.9"/>
+  <edge id="n_to_nw" from="n_north" to="c_nw" numLanes="2" speed="13.9"/>
+  <edge id="e_to_ne" from="n_east"  to="c_ne" numLanes="2" speed="13.9"/>
+  <edge id="e_to_se" from="n_east"  to="c_se" numLanes="2" speed="13.9"/>
+  <edge id="s_to_se" from="n_south" to="c_se" numLanes="2" speed="13.9"/>
+  <edge id="s_to_sw" from="n_south" to="c_sw" numLanes="2" speed="13.9"/>
+  <edge id="w_to_nw" from="n_west"  to="c_nw" numLanes="2" speed="13.9"/>
+  <edge id="w_to_sw" from="n_west"  to="c_sw" numLanes="2" speed="13.9"/>
+
+  <!-- reverse connections corner -> TL -->
+  <edge id="ne_to_n" from="c_ne" to="n_north" numLanes="2" speed="13.9"/>
+  <edge id="nw_to_n" from="c_nw" to="n_north" numLanes="2" speed="13.9"/>
+  <edge id="ne_to_e" from="c_ne" to="n_east"  numLanes="2" speed="13.9"/>
+  <edge id="se_to_e" from="c_se" to="n_east"  numLanes="2" speed="13.9"/>
+  <edge id="se_to_s" from="c_se" to="n_south" numLanes="2" speed="13.9"/>
+  <edge id="sw_to_s" from="c_sw" to="n_south" numLanes="2" speed="13.9"/>
+  <edge id="nw_to_w" from="c_nw" to="n_west"  numLanes="2" speed="13.9"/>
+  <edge id="sw_to_w" from="c_sw" to="n_west"  numLanes="2" speed="13.9"/>
+</edges>
