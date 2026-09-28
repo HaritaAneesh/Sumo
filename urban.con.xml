@@ -1,0 +1,8 @@
+<connections>
+    <connection from="loop_es" to="loop_s" fromLane="0" toLane="0"/>
+    <connection from="loop_es" to="loop_s" fromLane="1" toLane="1"/>
+    <connection from="loop_es" to="loop_s" fromLane="2" toLane="2"/>
+    <connection from="loop_s" to="s_in" fromLane="0" toLane="0"/>
+    <connection from="loop_s" to="s_in" fromLane="1" toLane="1"/>
+    <connection from="loop_s" to="s_in" fromLane="2" toLane="2"/>
+</connections>
