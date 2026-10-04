@@ -1,1 +1,5 @@
-*.net.xml
+__pycache__/
+*.pyc
+venv/
+.DS_Store
+*.zip

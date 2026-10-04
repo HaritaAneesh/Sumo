@@ -1,0 +1,6 @@
+float32 velocity
+float32 steering_angle
+float32 distance_to_intersection
+float32[3] lidar_proximity
+bool in_intersection
+bool traffic_light_green
